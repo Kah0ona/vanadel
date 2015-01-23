@@ -1,0 +1,259 @@
+// base ---------------------------------------------------------------
+.h2-title{
+	position: relative;
+}
+.hoog-knop{
+background: #003f65;
+float: right;
+position: absolute;
+z-index: 999999;
+bottom: 5px;
+right: 0;
+padding: 1px 9px;
+-webkit-border-top-left-radius: 3px;
+-webkit-border-top-right-radius: 3px;
+-moz-border-radius-topleft: 3px;
+-moz-border-radius-topright: 3px;
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+border-bottom-left-radius: 0px;
+border-bottom-right-radius: 0px;
+}
+ 
+// h4 opmaak -------------------
+.underline{
+	border: solid 1px #d7d9db;
+	margin-top: 1px;
+}
+.slogan-back{
+	position: absolute;
+z-index: 999999999999999999;
+top: -460px;
+width: 398px !important;
+}
+.vaste-slogan{
+position: absolute;
+z-index: 9999999999999999999;
+top: -326px;
+left: 10%;
+font-size: 29px;
+width: 241px;
+color: #fff;
+}
+.slogan{
+	width: 100%;
+	position: relative;
+}
+	// rest van de opmaak in base.scss
+//------------------------------
+//ul opmaak---------------------
+aside{
+	ul li {
+	list-style:none; /* if you’re not already using a reset */
+	}
+	ul li:before {
+	  color:#e15f2e; /* set color to red */
+	  content:"\2022"; /* /2022 is the numerical unicode for &bull; */
+	  font-size:1.2em; /* set the font-size of the bullet if necessary. Make sure to use em or %*/
+	  padding-right:1em; /* give the bullet some padding from the text Make sure to use em*/
+	  position:relative;
+	}
+}
+//------------------------------
+.no-margin-right{
+	margin-right:0;
+}
+
+//---------------------------------------------------------------------
+// main content -------------------------------------------------------
+.Content {
+	padding-top:20px;
+	text-align: justify;
+	padding-right:1%;
+
+}
+.content-wrapper{
+	margin-left: 10px;
+	margin-right: 10px;
+	position: relative;
+	a{
+		color:#DF6031;	
+	}
+
+}
+main{
+	margin-top: 10px;
+}
+//---------------------------------------------------------------------
+
+// aside --------------------------------------------------------------
+aside{
+	margin-top: 30px;
+}
+.aside-ul{
+	padding: 0 7%;
+	background: #f5f5f6;
+}
+.aside-ul2{
+
+	background: #f5f5f6;
+}
+.section-blog-link{
+ display: none;
+}
+.blogspost > .section-blog-link:nth-child(1) {
+ display: block;
+}
+.blogspost > .section-blog-link:nth-child(2) {
+ display: block;
+}
+.blogspost > .section-blog-link:nth-child(3) {
+ display: block;
+}
+.leesmeer-blog2{
+		width: 100%;
+		text-align: right;
+		font-size: 14px;
+		color: #DF6031;
+		margin: 20px 0;
+		float: right;
+}
+.button-image{
+	vertical-align: middle;
+}
+//---------------------------------------------------------------------
+//driecolumen-style----------------------------------------------------
+.driecolumen-style{
+	padding: 3% 7%;
+	border-left: solid 1px #d7d9db;
+	border-right: solid 1px #d7d9db;
+	border-bottom: solid 1px #d7d9db;
+	margin-top:-5px;
+	height: 300px;
+	position: relative;
+	a{
+		position: absolute;
+		right: 20px;
+		bottom: 10px;
+		color: #DF6031;
+	}
+}
+//section-blog----------------------------------------------------------
+.section-blog{
+	margin-top:30px;
+	background: #f5f5f6;
+	padding:50px 0;
+	position: relative;
+	h5{
+		margin-bottom: 20px;
+		display: inline;
+	}
+	.leesmeer-blog{
+		float: right;
+		font-size: 14px;
+		color: #DF6031;
+	}
+}
+.section-blog-link{
+	border-top: 1px solid #d7d9db;
+	border-bottom: 1px solid #d7d9db;
+	padding:5px 0;
+	a{
+		color:#838a8f;
+	}
+	b{
+		color: #DF6031;
+		margin-right: 30px;
+	}
+}
+.blogtekst{
+	max-height: 100px;
+	overflow: hidden;
+}
+.form-allowed-tags{
+	display: none;
+}
+#reply-title{
+	font-size: 1.42857rem;
+	margin: 0;
+	color: #003f65;
+}
+#comment{
+	display: block;
+	clear: both;
+}
+.float-right{
+	float: right;
+	margin-top: 10px;
+}
+
+//-----------------------------------------------------------------------
+// contact --------------------------------------------------------------
+.adress-info{
+	margin-top: 10px;
+}
+//-----------------------------------------------------------------------
+//app--------------------------------------------------------------------
+.app-text{
+	margin-top: 28px;
+}
+.googleimg{
+	margin-top: 20px;
+}
+
+//-----------------------------------------------------------------------
+@media all and (max-width: 667px) {
+	p{
+		font-size:0.9rem;
+		padding-right: 10px;
+	}
+	aside ul li{
+		font-size:0.9rem;
+	}
+}
+@media all and (max-width: 600px) {
+	.aside-ul{
+		h5{
+			margin-top:12px;
+		}
+	}
+	.aside-button{
+		width:100%;
+		float: left;
+		margin-top: 10px;
+	}
+	p{
+		font-size:0.9rem;
+		padding-right: 0;
+	}
+	.driecolumen-style{
+		border-top: 1px solid #D7D9DB;
+		padding-top:0;
+		height: 190px;
+		margin-bottom:10px;
+		a{
+			bottom:2px;
+			right: 8px;
+		}
+		h5{
+			margin-top:20px;
+		}
+	}
+	.imgstyle{
+		width: 220px;
+		height: 185px;
+		float: left;
+		margin-right: 20px;
+	}
+}
+@media all and (max-width: 568px) {
+	p{
+		font-size: 0.8rem;
+	}
+}
+@media all and (max-width: 414px) {
+	.imgstyle{
+		float: none;
+		width:100%;
+	}
+}

@@ -13,24 +13,24 @@ module.exports = {
       'autoprefixer:expanded',
 	  'copy:img_child',
       //'csslint:expanded',
-      'rsync:deploy_child'
+      'ftpush:deploy_child'
     ]
   },
   svg: {
     files: ['dev/ico/library/**/*.svg'],
     tasks: [
       'svgstore:all',
-      'rsync:deploy_child'
+      'ftpush:deploy_child'
     ]
   },
   js: {
     files: ['lib/js/**/*.js', 'dev/js/*.js'],
     tasks: [
-      'jsbeautifier:js',
+    //  'jsbeautifier:js',
      // 'jshint:strict',
       'newer:copy:js',
 	  'copy:img_child',
-      'rsync:deploy_child'
+      'ftpush:deploy_child'
     ]
   },
   php: {
@@ -41,22 +41,22 @@ module.exports = {
       'delete_sync:php_includes',
       'processhtml:expanded',
 	  'copy:img_child',
-      'rsync:deploy_child'
+      'ftpush:deploy_child'
     ]
   },
   img: {
     files: ['dev/img/**/*'],
     tasks: [
       //'newer:imagemin:all',
-      'delete_sync:img',
-      'rsync:deploy_child'
+      'delete_sync:img', 
+      'ftpush:deploy_child'
     ]
   },
   ico: {
     files: ['dev/ico/*'],
     tasks: [
 	  'copy:img_child',
-      'rsync:deploy_child'
+      'ftpush:deploy_child'
     ]
   },
 
@@ -66,7 +66,7 @@ module.exports = {
   livereload: {
     options: {
       livereload: true
-    },
+    }, 
     files: ['dist/child/**/*']
   }
 };

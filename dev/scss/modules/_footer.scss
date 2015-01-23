@@ -1,0 +1,57 @@
+.Footer {
+	padding:20px 0;
+	background: #003D62;
+	font-size: 13px;
+	h4{
+		margin: 0;
+		color: #fff;
+	}
+	ul li {
+	list-style:none; /* if you’re not already using a reset */
+	color: #fff;
+	}
+	ul li:before {
+	  color:#fff; /* set color to red */
+	  content:"\2022"; /* /2022 is the numerical unicode for &bull; */
+	  font-size:1.2em; /* set the font-size of the bullet if necessary. Make sure to use em or %*/
+	  padding-right:1em; /* give the bullet some padding from the text Make sure to use em*/
+	  position:relative;
+	}
+	p{
+		color: #fff;
+		font-size: 13px;
+		margin: 0;
+	}
+}
+.Socket{
+	text-align: center;
+	padding: 2px;
+	a{
+		color: #000;
+	}
+}
+
+// RESPONSIVE FOOTER
+.Footer-inner .widget {
+	@include span-columns(4);
+	@media screen and(max-width: 980px){
+		@include span-columns(12);
+	}
+}
+
+.Footer-inner {
+}
+
+//style the widgets
+.Footer-inner .widget {
+
+}
+.copyright-text{
+	margin-top:10px;
+}
+@media all and (max-width: 600px) {
+	.Footer{
+		text-align: center;
+	}
+}
+

@@ -1,0 +1,152 @@
+// *************************************
+//
+// Header
+// -> Main site header
+//
+// *************************************
+
+.Header {
+  background-image: url("../img/img-header-bg.png");
+  background-size: cover;
+}
+
+// -------------------------------------
+// Module specific variables
+// -------------------------------------
+
+// -variable
+
+// -------------------------------------
+// Modifiers
+// -------------------------------------
+
+// .Module--modifierName
+
+// -------------------------------------
+// States
+// -------------------------------------
+
+// .is-module-state
+
+// -------------------------------------
+// Context
+// -------------------------------------
+
+// .has-module
+
+// -------------------------------------
+// Submodules
+// -------------------------------------
+
+// ----- Contact bar ----- //
+
+.Header-contact {
+  @extend .u-gridRow;
+  padding-bottom : $l-whiteSpace;
+  padding-top    : $l-whiteSpace;
+  background: rgba($c-black,0.5);
+}
+
+// ----- Contact bar ----- //
+
+.Header-logo {
+  @extend .u-gridRow;
+  padding-bottom : $l-whiteSpace;
+  padding-top    : $l-whiteSpace;
+  background: rgba($c-black,0.25);
+}
+
+// ----- Nav bar ----- //
+
+.Header-nav {
+  @extend .u-gridRow;
+  padding-bottom : $l-whiteSpace;
+  padding-top    : $l-whiteSpace;
+  background: $c-blue;
+}
+
+// ----- Carousel ----- //
+
+.Header-carousel {
+  @extend .u-gridRow;
+  padding-bottom : ($l-whiteSpace * 4);
+  padding-top    : ($l-whiteSpace * 4);
+}
+
+.Slider {
+	visibility: hidden;
+}
+header{
+  padding: 10px;
+  position: relative;
+}
+.header-title{
+  display: none;
+  float: right;
+  position: absolute;
+  bottom:0;
+  right: 10px;
+  margin: 0;
+  color: #003f65;
+}
+@media all and (max-width: 768px) {
+  .header-title{
+    margin: 0 0 5px 0;
+    font-size: 1.6rem
+  }
+  h2{
+    font-size: 1.4rem;
+  }
+}
+@media all and (max-width: 667px) {
+   .header-title{
+    margin: 0 0 7px 0;
+    font-size: 1.3rem
+  }
+  h2{
+    font-size: 1.3rem;
+  }
+  h6{
+        font-size: 1.1rem;
+  }
+
+}
+@media all and (max-width: 667px) {
+  .header-title {
+      margin: 0px 0px 10px;
+      font-size: 1.1rem;
+    }
+}
+@media all and (max-width: 568px) {
+  .header-title {
+      margin: 0px 0px 11px;
+      font-size: 1rem;
+  }
+  h2{
+    font-size: 1.1rem;
+  }
+  h6{
+    font-size: 1rem;
+  }
+}
+@media all and (max-width: 600px) {
+  .header-title {
+    font-size: 1rem;
+  }
+}
+@media all and (max-width: 568px) {
+  .border-none{
+    border: none!important;
+  }
+}
+@media all and (max-width: 414px) {
+  .logo-top{
+    margin: 0;
+    margin: 0 auto !important;
+    float: none !important;
+    display: block;
+  }
+  .header-title{
+    display: none;
+  }
+}
