@@ -14,8 +14,7 @@
 		margin:20px;
 		margin-top: 15px;
 		width: 15px;
-		-ms-transform: rotate(-90deg); /* IE 9 */
-	    -webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
+	
 	    transform: rotate(-90deg);
 	}
 	a{
@@ -30,16 +29,11 @@
 	 //   }
 	//}
 }
-.accordion.active{
-	img{
-		position: absolute;
-		left:-5px;
-		margin:20px;
-		margin-top: 15px;
-		width: 15px;
-		-ms-transform: rotate(0deg); /* IE 9 */
-	    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
-	    transform: rotate(0deg);
+
+
+.accordion.active {
+	img {
+		transform: rotate(0deg);
 	}
 }
 .accContent{

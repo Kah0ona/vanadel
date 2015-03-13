@@ -16,26 +16,39 @@ $(document).ready(function() {
   // Accordion
   // ----------------------------
   $('.accordion').click(function(event) {
-
-    $('.accContent').slideUp('slow');
-
-    if ($(this).next().is(':hidden') == true) {
-      $(this).next().slideDown('slow');
-    }
-
     var currentAccordion = $(event.currentTarget);
-    $('.accordion.active').removeClass('active');
-    currentAccordion.addClass('active');
+	var props =	{
+		  duration: 500,
+		  step: function(now, fx) {
+			  console.log(now);
+			  $(this).css({"transform": "rotate("+now+"deg)"});
+		  }
+	};
+
+	if ($(this).next().is(':hidden')) {
+		currentAccordion.find('img').animate(
+			{'rotation' : 0}, props
+				);
+		$(this).next().slideDown('slow');
+	} else {
+		currentAccordion.find('img').animate(
+			{'rotation' : -90}, props
+		);
+		$(this).next().slideUp('slow');
+	}
   });
+
+
+
   $('.accContent').hide(); // Hide Content
   $('.home').show(); // Show the "Home" content by Default
-
 
   var hashtag = window.location.hash;
 
   var zonderhekje = hashtag.substring(1);
-
-  $('.' + zonderhekje).show(); // Show the "Home" content by Default
+  if(zonderhekje != null && zonderhekje != ''){
+	 $('.' + zonderhekje).show(); // Show the "Home" content by Default
+  }
 
 });
 
