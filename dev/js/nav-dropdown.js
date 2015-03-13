@@ -13,7 +13,7 @@
 jQuery(document).ready(function($) {
 
   // When a dropdown trigger is clicked
-  $('.js-navDropdown').click(function(e) {
+  $('.js-navDropdown').hover(function(e) {
     // If the selected dropdown list is not visible
     if ($(this).siblings('.Navigation-list--dropdown').hasClass('is-hidden')) {
       // Hide all dropdown lists, except the selected dropdown and its parents
@@ -26,15 +26,15 @@ jQuery(document).ready(function($) {
       $(this).parents('.Navigation-list--dropdown')
         .removeClass('is-hidden');
       // If the selected dropdown is visible
-    } else {
+    }/* else {
       // Hide the selected dropdown
       $(this).siblings('.Navigation-list--dropdown').addClass('is-hidden');
       // Hide the descendants of the selected dropdown
       $(this).children('.Navigation-list--dropdown').addClass('is-hidden');
-    }
+    }*/
   }).click(function(e) {
     // Prevent screen from jumping when clicking a dropdown trigger
-    e.preventDefault();
+    //e.preventDefault();
   });
   // Stop clicks on navigation links from bubbling up
   $('.Navigation-link').click(function(e) {

@@ -8,7 +8,7 @@
 .Navigation {
   @include clearfix;
   text-align: center;
-  padding:10px;
+  //padding:10px;
 }
 
 // -------------------------------------
@@ -31,7 +31,8 @@
 }
 
 .Navigation-link.is-active {
-  text-decoration: underline;
+  background:#022E55;
+
 }
 
 // -------------------------------------
@@ -50,18 +51,34 @@
   display: block;
   margin: 0 rem(15px);
   float: left;
+  margin-right: 0px;
+  margin-left: 0px;
   &:first-of-type {
     margin-left: 0;
   }
   &:last-of-type {
     margin-right: 0;
   }
+  
+  
 }
-
+.caret {display: none;}
 // ----- Navigation link ----- //
 
 .Navigation-link {
-  text-transform: uppercase;
+   display: inline-block;
+  text-decoration: none;
+   padding:10px;
+   padding-left:15px;
+   padding-right:15px;
+   &:hover{
+    background:#022E55;
+    text-decoration: none;
+  }
+  a:hover{
+    background:#022E55;
+    text-decoration: none;
+  }
 }
 
 .Navigation-link--invertedBold {
@@ -69,7 +86,7 @@
   font-weight: bold;
 }
 .Bot-Nav{
-  background: #003D62;
+  background: #E05F2E;
   margin-top: 10px;
   position: relative;
 }
@@ -78,5 +95,25 @@
     top: 0; 
     z-index: 999999999999999999999999;
     width: 100%;
-
-} 
+    margin-top: 0px !important;
+}
+.Navigation-listItem--hasDropdown {
+  a{
+    text-decoration: none!important;
+    &:hover{
+      background:#022E55;
+      ul{
+        display:block;
+      }
+    }
+  }
+}
+.Navigation-list--dropdown{
+  
+    li{
+      :hover{
+        background:none!important;
+      }
+    }
+  
+}

@@ -6,7 +6,7 @@ Template Name: Contactpage
 
 <?php get_header(); ?>
 
-	<div>
+	<div class="u-gridContainer">
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 		<article class="Content Content--fullwidth u-gridContainer" id="post-<?php the_ID(); ?>">
 			<div class="Content-entry">
@@ -19,16 +19,20 @@ Template Name: Contactpage
 					<div class="u-gridRow">					
 						<div class="adress u-gridCol4">
 							<div class="adress-info">
-								<p>vanadel</p>
+								<p>Van Adel | Administratie • Belastingen • Advies</p>
 								<p>Wapserveld 13</p>
 								<p>2151 JP Nieuw-Vennep</p>
-								<p>Email: info@vanadelfinance.nl</p> 
-								<p>Tel: 0252347577</p> 
+								<p>E-mail: info@vanadelfinance.nl</p> 
+								<p><a href="mailto:info@vanadelfinance.nl">Mail ons</a></p>
+								<p>Tel: 0252 347 577</p> 
+								<p>KvK: 54052203</p>
+								<p><a href="https://www.google.nl/maps/dir//Van+Adel+%7C+Administratie+%E2%80%A2+Belastingen+%E2%80%A2+Advies,+Wapserveld+13,+2151+JP+Nieuw-Vennep/@52.2671694,4.6060651,18z/data=!4m13!1m4!3m3!1s0x47c5c29c0d380e1f:0x97adaf75424fa4fa!2sVan+Adel+%7C+Administratie+%E2%80%A2+Belastingen+%E2%80%A2+Advies!3b1!4m7!1m0!1m5!1m1!1s0x47c5c29c0d380e1f:0x97adaf75424fa4fa!2m2!1d4.606041!2d52.267002" target="_blank">Routebeschrijving</a></p>
 							</div>
 	
 						</div>					
 						<div class="adress-map u-gridCol8">
 							<div id="map_canvas"></div>
+							
 						</div>
 
 					</div> <!-- /gridRow -->
@@ -36,13 +40,15 @@ Template Name: Contactpage
 					<div class="hr-style super-margin">
 						<hr>
 					</div>
-					<div class="u-gridRow">						
-						<p class="contact-page-p">Heeft u nog vragen? Neem dan hieronder contact met ons op. </p>
-						<?php the_content(); ?>
-					
-						<?php edit_post_link('Edit this entry.', '<p>', '</p>'); ?>
-					</div>
-
+					<div class="u-gridRow">	
+						<div class="u-gridCol6">				
+							<p class="contact-page-p">Heeft u nog vragen? Neem dan hieronder contact met ons op. </p>
+							<p><a style="color:#E05F2E;">*</a> betekent dat het een verplicht veld betreft.</p>
+							<?php the_content(); ?>
+						
+							<?php edit_post_link('Edit this entry.', '<p>', '</p>'); ?>
+						</div>
+					</div>	
 				</div> <!-- content-text -->
 			</div>
 		</article>

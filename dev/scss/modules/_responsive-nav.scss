@@ -45,7 +45,13 @@
 	display: none;
 }
 
-
+ul.Navigation-list--dropdown {
+	margin-top:0px;
+	
+	.Navigation-link.is-active {
+	background: none;
+	}
+}
 //======================================================
 //          @media queries - Responsiveness
 //======================================================
@@ -57,14 +63,13 @@
 	}
 	ul.Navigation-list--dropdown {
 	display: block;
-height: auto;
-position: relative;
-width: 100%;
-padding: 0 10px;
-line-height: 40px;
-z-index: 9999;
-margin-top: 10px;
-background: #044E7B;
+	height: auto;
+	position: relative;
+	width: 100%;
+	padding: 0 10px;
+	line-height: 40px;
+	z-index: 9999;
+	background: #044E7B;
 }
 	.Nav-tel {
 		display: none;
@@ -188,24 +193,24 @@ background: #044E7B;
 		.telsvg {
 			left: 10px;				
 			.Icon--inline {
-				margin-top: -11px;
-				margin-left: -4.2px;
+				margin-top: -15px;
+				margin-left: -6.2px;
 			}
 		}
 
 		.tel2svg {
 			left: 55px;				
 			.Icon--inline {
-			margin-top: -11px;
-				margin-left: -4.2px;
+			margin-top: -15px;
+				margin-left: -6.2px;
 			}
 		}
 
 		.mailsvg {
 			left: 100px;				
 			.Icon--inline {
-				margin-top: -11px;
-				margin-left: -4.2px;
+				margin-top: -15px;
+				margin-left: -6.2px;
 			}
 		}
 	}

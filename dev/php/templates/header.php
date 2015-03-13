@@ -30,7 +30,7 @@
     <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/production.css">
     <!-- /build -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-    <!-- build:remove:compressed -->
+    <!-- build:remove:compressed --> 
     <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.min.js"></script>
     <!-- /build -->
 
@@ -42,7 +42,12 @@
   <body <?php body_class(); ?> >
 
     <header class="u-gridContainer">
-          <a href="/home"> <img class="logo-top" src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png"/></a>
+          <a href="/home"> <img class="logo-top" src="<?php echo get_stylesheet_directory_uri(); ?>/img/van_adel_logo.svg"/></a>
+          <div class="socialmedia">
+            <a href="https://www.facebook.com/vanadelfinance" target="_blank"> <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/facebook.png"/></a>
+            <a href="https://www.linkedin.com/company/2656057?trk=prof-exp-company-name" target="_blank"> <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/linkedin.png"/></a>
+            <a href="mailto:info@vanadelfinance.nl"> <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/mail-header.png"/></a>
+          </div>
           <h3 class="header-title">Welkom op de website van Van Adel</h3>
     </header>
   
@@ -73,26 +78,4 @@
 		</div><!-- header-contact -->
 	</div>
   </div>
-    <div class="header-slider">
-            <div class="sliderboven-wrapper">
-                <div class="Slider"> <!-- Dit is de slider in de onderkant header -->
-                    <div>
-                        <img  class="header-onderkant-slider-image"src="<?php echo get_stylesheet_directory_uri(); ?>/img/image1.jpg" >
-                        <div class="u-gridContainer ">
-                            <div class="slogan">
-                               <img class="slogan-back" src="<?php echo get_stylesheet_directory_uri(); ?>/img/sliderfront.svg"/> 
-                                <p class="vaste-slogan"> Uw solide partner in financiën</p>
-                            </div>
-                        </div>
-                    </div> 
-                    <div>
-                        <img  class="header-onderkant-slider-image"src="<?php echo get_stylesheet_directory_uri(); ?>/img/image2.jpg" >
-                         <div class="u-gridContainer ">
-                            <div class="slogan">
-                               <img class="slogan-back" src="<?php echo get_stylesheet_directory_uri(); ?>/img/sliderfront.svg"/> 
-                                <p class="vaste-slogan"> Uw solide partner in financiën</p>
-                            </div>
-                        </div>
-                </div>   <!-- einde slider van de onderkant header --> 
-            </div>
-    </div>
+<button class="static-hoog-knop totop"><img  src="<?php echo get_stylesheet_directory_uri(); ?>/img/v.svg"/></button>

@@ -1,3 +1,86 @@
+//Accordion--------------------------
+.accordion{
+	border:1px solid white;
+	background:#D3D3D3;
+	h4{
+		line-height: 0;
+		font-size: 1rem;
+		margin-left:40px;
+		color:#003f65;
+	}
+	img{
+		position: absolute;
+		left:-5px;
+		margin:20px;
+		margin-top: 15px;
+		width: 15px;
+		-ms-transform: rotate(-90deg); /* IE 9 */
+	    -webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
+	    transform: rotate(-90deg);
+	}
+	a{
+		text-decoration: none;
+	}
+	//&:hover{
+	//	img{
+	//	-ms-transform: rotate(0deg); /* IE 9 */
+	//    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+	//    transform: rotate(0deg);
+	//    margin-top: 17px;
+	 //   }
+	//}
+}
+.accordion.active{
+	img{
+		position: absolute;
+		left:-5px;
+		margin:20px;
+		margin-top: 15px;
+		width: 15px;
+		-ms-transform: rotate(0deg); /* IE 9 */
+	    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+	    transform: rotate(0deg);
+	}
+}
+.accContent{
+	display:none;
+}
+.fb-share-button{
+	span{
+		vertical-align: top !important;
+		margin-top:-2px;
+	}
+}
+.acc-wrap{
+	border:1px solid black;
+}
+.acc-image{
+	margin-top:70px;
+}
+.padding-top{
+	margin-top:20px;
+	margin-bottom:20px;
+}
+.posts-list{
+	padding:20px;
+	ul{
+
+	}
+	li{
+		border-bottom:1px solid grey;
+		padding:10px 5px;
+		&:first-child{
+			border-top:1px solid grey;
+		}
+	}
+}
+//------------------------------
+#map_canvas img {
+	max-width:inherit;
+}
+#map_canvas{
+	height:300px !important;
+}
 // base ---------------------------------------------------------------
 .h2-title{
 	position: relative;
@@ -35,9 +118,9 @@ width: 398px !important;
 position: absolute;
 z-index: 9999999999999999999;
 top: -326px;
-left: 10%;
+left: 6%;
 font-size: 29px;
-width: 241px;
+width: 300px;
 color: #fff;
 }
 .slogan{
@@ -76,6 +159,7 @@ aside{
 	margin-left: 10px;
 	margin-right: 10px;
 	position: relative;
+
 	a{
 		color:#DF6031;	
 	}
@@ -131,12 +215,45 @@ aside{
 	margin-top:-5px;
 	height: 300px;
 	position: relative;
+}
+.driecolumen-style-diensten{
+	padding: 3% 7%;
+	border-left: solid 1px #d7d9db;
+	border-right: solid 1px #d7d9db;
+	border-bottom: solid 1px #d7d9db;
+	margin-top:-5px;
+	height: 230px;
+	position: relative;
 	a{
-		position: absolute;
-		right: 20px;
-		bottom: 10px;
-		color: #DF6031;
+		color:#E05F2E;
 	}
+}
+.a-leftbottom{
+		position: absolute;
+		right: 8px;
+		bottom: 15px;
+		color: #DF6031 !important;
+		a{
+		color:white;
+		background:#DA5421;
+		color:white;
+		border:8px solid #DA5421;
+		border-radius: 5px 5px 5px 5px;
+		&:hover{
+			text-decoration: none;
+			border:8px solid #003D62;
+			background:#003D62;
+		}
+	}
+}
+.news-item{
+	margin-bottom:80px;
+}
+.blue-a{
+	a{
+	color:#DA5421;	
+	}
+	
 }
 //section-blog----------------------------------------------------------
 .section-blog{
@@ -167,7 +284,7 @@ aside{
 	}
 }
 .blogtekst{
-	max-height: 100px;
+	max-height: 110px;
 	overflow: hidden;
 }
 .form-allowed-tags{
@@ -187,10 +304,83 @@ aside{
 	margin-top: 10px;
 }
 
+.margin-bottom{
+	margin-bottom:40px;
+}
+//--------------------------------------------------------------------
+//MELLES CODE-----------------------------
+.driecolumn-link{
+	
+}
+
+.werkgebied{
+	margin:0 auto;
+	.margin-top{
+		margin-top: 40px;
+	}
+}
+
+.aside-img{
+	text-align: center !important;
+}
+.orange-border{
+	border-bottom:3px solid #DA5421;
+
+}
+.orange-box{
+	background: #DA5421;
+	height:80px;
+	text-align:center;
+	color:white;
+	margin-bottom:20px;
+	h4{
+		line-height: 3.3;
+	}
+}
+.blue-border{
+	border-bottom:3px solid #022E55;
+
+}
+.blue-border:last-of-type{
+		margin-bottom:40px;
+	}
+.blue-box{
+	background: #022E55;
+	height:80px;
+	text-align:center;
+	color:white;
+	margin-bottom:20px;
+	h4{
+		line-height: 3.3;
+	}
+}
+
+.anwb{
+	margin-right:39px !important;
+	float:right;
+}
+.static-hoog-knop{
+	position: fixed;
+	bottom:100px;
+	right:20px;
+	z-index:1;
+	img{
+		width:25px;
+	}
+}
+.mail-top{
+	position:absolute;
+	z-index:999999999999999;
+	right: 200px;
+}
+
 //-----------------------------------------------------------------------
 // contact --------------------------------------------------------------
 .adress-info{
 	margin-top: 10px;
+}
+.gfield_required{
+	color:#E05F2E !important;
 }
 //-----------------------------------------------------------------------
 //app--------------------------------------------------------------------
@@ -198,18 +388,48 @@ aside{
 	margin-top: 28px;
 }
 .googleimg{
-	margin-top: 20px;
+	margin-top: 50px;
 }
 
+.overons-container{
+	margin-top:10px;
+	h2{
+		margin-top: 30px !important;
+	}
+}
+.aside-button{
+	margin-bottom:20px;
+}
 //-----------------------------------------------------------------------
+@media all and (max-width: 1300px) {
+	.static-hoog-knop{
+	right:0px !important;
+	top:initial;
+	}
+}
+@media all and (max-width: 1000px) {
+	.driecolumen-style{
+		height:auto;
+		padding-bottom:40px;
+	}
+	.driecolumen-style-diensten{
+		height:270px;
+		padding-bottom:40px;
+	}
+}
 @media all and (max-width: 667px) {
 	p{
-		font-size:0.9rem;
+		font-size:1rem;
 		padding-right: 10px;
 	}
 	aside ul li{
 		font-size:0.9rem;
 	}
+	.driecolumen-style-diensten{
+		height:auto;
+		padding-bottom:0px;
+	}
+
 }
 @media all and (max-width: 600px) {
 	.aside-ul{
@@ -217,19 +437,30 @@ aside{
 			margin-top:12px;
 		}
 	}
+
 	.aside-button{
 		width:100%;
 		float: left;
-		margin-top: 10px;
+		margin: 10px;
 	}
 	p{
 		font-size:0.9rem;
 		padding-right: 0;
 	}
-	.driecolumen-style{
+	.static-hoog-knop{
+	right:0px !important;
+	bottom:0px !important;
+	}
+}
+@media all and (max-width: 568px) {
+	p{
+		font-size: 1rem;
+	}
+}
+@media all and (max-width: 414px) {
+		.driecolumen-style{
 		border-top: 1px solid #D7D9DB;
 		padding-top:0;
-		height: 190px;
 		margin-bottom:10px;
 		a{
 			bottom:2px;
@@ -245,15 +476,13 @@ aside{
 		float: left;
 		margin-right: 20px;
 	}
-}
-@media all and (max-width: 568px) {
-	p{
-		font-size: 0.8rem;
-	}
-}
-@media all and (max-width: 414px) {
 	.imgstyle{
 		float: none;
 		width:100%;
+	}
+}
+.adress-info{
+	a{
+		color:#E15F2E;
 	}
 }

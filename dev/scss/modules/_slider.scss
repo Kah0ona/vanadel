@@ -6,6 +6,7 @@
 	margin: 0 auto 0px;
 	padding: 0;
 	*zoom: 1;
+	z-index:2;
 	img{
 		 width: 100%;
 	}
@@ -24,8 +25,9 @@
 	//box-shadow: 0 0 5px #ccc;
 	//border:  5px solid #fff;
 	//left: -5px;
-	background: #fff;
-
+	background-image: url("../img/slide21.png");
+	background-size:cover;
+	background-position:0px -100px;
 	/*fix other elements on the page moving (on Chrome)*/
 	-webkit-transform: translatez(0);
 	-moz-transform: translatez(0);
@@ -91,7 +93,7 @@
 
 .bx-wrapper .bx-pager.bx-default-pager a:hover,
 .bx-wrapper .bx-pager.bx-default-pager a.active {
-	background: #006991;
+	background: #022E55;
 }
 
  /* DIRECTION CONTROLS (NEXT / PREV) */
@@ -197,6 +199,13 @@
 }
 .bx-viewport, .header-onderkant-slider-image{
 	height: 460px!important;
+	overflow:hidden;
+
+}
+@media all and (max-width: 1600px) {
+	.bx-wrapper .bx-viewport {
+	background-position:0px 0px;
+	}
 }
 @media all and (max-width: 768px) {
 	.bx-viewport, .header-onderkant-slider-image{

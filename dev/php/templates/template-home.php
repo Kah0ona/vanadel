@@ -24,12 +24,50 @@ Template Name: Homepage
 
     
     ?>
+    <div class="header-slider">
+            <div class="sliderboven-wrapper">
+            	<div class="mail-top"><a href="/contact"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/mail-top.png" ></a></div>
+                <div class="Slider"> <!-- Dit is de slider in de onderkant header -->
+                	<?php
 
+						$args = array(
+							'post_type' => 'slides',
+							'posts_per_page'=>999
+						);
+						$slides = new WP_Query( $args );
+						$num = count($slides);
+						$counter = 0;
+						if( $slides->have_posts() ) {
+							while( $slides->have_posts() ) {
+								$slides->the_post();
+								$counter++;
+								?>
+								<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
+									  $image_url = $image[0];
+								?>
+
+								<div>
+			                        <img  class="header-onderkant-slider-image"src="<?php echo get_stylesheet_directory_uri(); ?>/img/clear-slide.png" >
+			                        <div class="u-gridContainer ">
+			                            <div class="slogan">
+			                               <img class="slogan-back" src="<?php echo get_stylesheet_directory_uri(); ?>/img/sliderfront.svg"/> 
+			                                <p class="vaste-slogan"> <?php the_title(); ?></p>
+			                            </div>
+			                        </div>
+			                    </div>
+								<?php
+							}
+						}
+					?>
+                  
+            </div>
+        </div>
+    </div>
 
 	<div class="u-gridContainer">
 		<div class="content-wrapper">
 			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-				<section class="gridRow">
+				<section class="u-gridRow">
 					<article class="Content Content--home u-gridCol8" id="post-<?php the_ID(); ?>">
 						<hgroup class="h2-title">
 							<h2><?php the_title(); ?></h2>
@@ -63,36 +101,36 @@ Template Name: Homepage
 
 								   	</div>
 						</section>
-						<section>
-							<a href="/contact">
-								<button class="aside-button">
-									<img  class="button-image" src="<?php echo get_stylesheet_directory_uri(); ?>/img/man.png" >
-									<p>Maak een kennismakingsafspraak</p>
-								</button>	
-							</a>
-				
-							<a href="/contact">
-								<button class="aside-button">
-									<img  class="button-image" src="<?php echo get_stylesheet_directory_uri(); ?>/img/mail.png" >
-									<p>Vraag een offerte aan</p>
-								</button>	
-							</a>
-						</section>
+						
 					</aside>
 				</section>
+				<section class="u-gridRow" style="margin:20px 0px;"> 
+					<a href="/contact" style="color:white;">
+						<button class="aside-button">
+							<img  class="button-image" src="<?php echo get_stylesheet_directory_uri(); ?>/img/man.png" >
+							<p>Maak een kennismakingsafspraak</p>
+						</button>	
+					</a>
 
+					<a href="/contact">
+						<button class="aside-button">
+							<img  class="button-image" src="<?php echo get_stylesheet_directory_uri(); ?>/img/mail.png" >
+							<p>Vraag een offerte aan</p>
+						</button>	
+					</a>
+				</section>
 				<section >
 					<article class="">
 						<hgroup class="h2-title u-gridCol12">
 							<h2>Diensten</h2>
-							<button class="hoog-knop totop"><img  src="<?php echo get_stylesheet_directory_uri(); ?>/img/v.svg"/></button>
+							
 							<hr class="underline">
 						</hgroup>
 						<section class="gridRow">
-							<article class="u-gridCol4">
+							<article class="u-gridCol4 margin-bottom">
 								<img  class="imgstyle" src="<?php echo $image2['url']; ?>" alt="<?php echo $image2['alt']; ?>"/>
 								<section class="driecolumen-style">
-									<h5>Administratie</h5>
+									<a href="/administratie/"><h5>Administratie</h5></a>
 									<p>Het fundament van een succesvolle 
 										onderneming is een overzichtelijke 
 										en solide administratie. Wij zorgen 
@@ -100,25 +138,25 @@ Template Name: Homepage
 										over de geldstromen binnen uw 
 										bedrijf.
 									</p>
-									<a href="/administratie/" class="driecolumn-link">Lees verder ></a>
+									<div class="a-leftbottom"><a href="/administratie/" class="driecolumn-link">Lees verder </a></div>
 								</section>
 							</article>
 
-							<article class="u-gridCol4">
+							<article class="u-gridCol4 margin-bottom">
 								<img  class="imgstyle" src="<?php echo $image3['url']; ?>" alt="<?php echo $image3['alt']; ?>"/>
 								<section class="driecolumen-style">
-									<h5>Belastingen</h5>
+									<a href="/belastingen/"><h5>Belastingen</h5></a>
 									<p>Wij verzorgen alle soorten belastingaangiften, zoals omzetbelasting, inkomstenbelasting, vennootschapsbelasting, loonheffing en dividendbelasting. Ons uitgangspunt hierbij is om dit zo voordelig mogelijk voor u als cliënt uit te voeren.</p>
-									<a href="/belastingaangiften-en-advies/" class="driecolumn-link">Lees verder ></a>
+									<div class="a-leftbottom"><a href="/belastingen/" class="driecolumn-link">Lees verder </a></div>
 								</section>
 							</article>
 
-							<article class="u-gridCol4 no-margin-right">
+							<article class="u-gridCol4 margin-bottom no-margin-right">
 								<img  class="imgstyle" src="<?php echo $image4['url']; ?>" alt="<?php echo $image4['alt']; ?>"/>
 								<section class="driecolumen-style">
-									<h5>Advies</h5>
+									<a href="/advies/"><h5>Advies</h5></a>
 									<p>Wij bieden u ruim 20 jaar ervaring op het gebied van financiële en fiscale activiteiten in uiteenlopende branches en sectoren binnen het bedrijfsleven. Vanuit onze uitgebreide praktische werkervaring kunnen wij u goed adviseren op diverse financiële gebieden.</p>
-									<a href="/financiele-advisering/" class="driecolumn-link">Lees verder ></a>
+									<div class="a-leftbottom"><a href="/advies" class="driecolumn-link">Lees verder </a></div>
 								</section>
 							</article>
 						<section>  

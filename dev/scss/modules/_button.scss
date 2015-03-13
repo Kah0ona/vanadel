@@ -11,6 +11,7 @@
   padding: rem(10px) rem(5px);
   &:hover {
     text-decoration: none;
+    background:#003f65;
   }
 }
 
@@ -67,6 +68,9 @@
   position: relative;
   margin-bottom: 10px;
   color: #fff;
+  &:hover{
+    background: #003D62;
+  }
   img{
     width: 20px;
     display: inline;
@@ -76,6 +80,7 @@
     margin-left:5px;
     color: #fff;
   }
+  
  }
  #submit, #gform_submit_button_1{
   border: 0;
@@ -86,4 +91,7 @@
   position: relative;
   margin-bottom: 10px;
   color: #fff;
+  &:hover{
+    background:#003D62;
+  }
  }

@@ -81,13 +81,16 @@ header{
   position: relative;
 }
 .header-title{
-  display: none;
   float: right;
   position: absolute;
   bottom:0;
   right: 10px;
   margin: 0;
   color: #003f65;
+  display: none;
+}
+.socialmedia{
+  float:right;
 }
 @media all and (max-width: 768px) {
   .header-title{

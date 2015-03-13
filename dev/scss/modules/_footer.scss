@@ -6,21 +6,21 @@
 		margin: 0;
 		color: #fff;
 	}
+	ul {
+	  list-style-type: disc;
+	  list-style-position: outside;
+	}
 	ul li {
-	list-style:none; /* if you’re not already using a reset */
 	color: #fff;
 	}
-	ul li:before {
-	  color:#fff; /* set color to red */
-	  content:"\2022"; /* /2022 is the numerical unicode for &bull; */
-	  font-size:1.2em; /* set the font-size of the bullet if necessary. Make sure to use em or %*/
-	  padding-right:1em; /* give the bullet some padding from the text Make sure to use em*/
-	  position:relative;
-	}
+	
 	p{
 		color: #fff;
 		font-size: 13px;
 		margin: 0;
+	}
+	h6{
+		color:#fff;
 	}
 }
 .Socket{
@@ -52,6 +52,8 @@
 @media all and (max-width: 600px) {
 	.Footer{
 		text-align: center;
+		ul{
+			list-style-type: none;
+		}
 	}
 }
-
