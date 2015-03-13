@@ -44,7 +44,7 @@ function initialize() {
       '</div>';
     
 
-    codeAddress('Wapserveld 13 2151 JP Nieuw-Vennep', 'red', 'Een titel', contentString);
+    codeAddress('Wapserveld 13 2151 JP Nieuw-Vennep', 'red', 'Van Adel Finance', contentString);
   }
 }
 
@@ -66,11 +66,9 @@ function codeAddress(address,  colour, title, overlay) {
         position: new google.maps.LatLng(52.267002,4.606041)
       });
 
-
-      google.maps.event.addListener(marker, 'click', function() {
+      google.maps.event.addListener(marker, 'mouseover', function() {
          infowindow.open(map,marker);
       });
-      
       
     }
   });
