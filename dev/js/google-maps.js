@@ -37,7 +37,7 @@ function initialize() {
     var contentString = '<div id="content" style="color: black">'+
       '<div id="siteNotice">'+
       '</div>'+
-      '<h4 style="font-size: 13px;" id="firstHeading" class="firstHeading">Van Adel | Administratie • Belastingen • Advies</h4>'+
+      '<h4 style="font-size: 14px; font-family: Roboto,Arial;" id="firstHeading" class="firstHeading">Van Adel | Administratie &dot; Belastingen &dot; Advies</h4>'+
       '<div id="bodyContent">'+
       '<p><a style="color:blue;" href="https://www.google.nl/maps/dir//Van+Adel+%7C+Administratie+%E2%80%A2+Belastingen+%E2%80%A2+Advies,+Wapserveld+13,+2151+JP+Nieuw-Vennep/@52.2671694,4.6060651,18z/data=!4m13!1m4!3m3!1s0x47c5c29c0d380e1f:0x97adaf75424fa4fa!2sVan+Adel+%7C+Administratie+%E2%80%A2+Belastingen+%E2%80%A2+Advies!3b1!4m7!1m0!1m5!1m1!1s0x47c5c29c0d380e1f:0x97adaf75424fa4fa!2m2!1d4.606041!2d52.267002" target="_blank">Routebeschrijving</a></p>'+
       '</div>'+
@@ -54,6 +54,10 @@ function codeAddress(address,  colour, title, overlay) {
   }, function(results, status) {
     if (status == google.maps.GeocoderStatus.OK) {
       map.setCenter(results[0].geometry.location);
+
+
+
+
 
       var infowindow = new google.maps.InfoWindow({
         content: overlay
