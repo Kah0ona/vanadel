@@ -11,6 +11,7 @@
 // -------------------------------------
 
 $(document).ready(function() {
+  var firstTime = true;
 
   // ----------------------------
   // Accordion
@@ -26,6 +27,7 @@ $(document).ready(function() {
 	};
 
 	if ($(this).next().is(':hidden')) {
+		
 		currentAccordion.find('img').animate(
 			{'rotation' : 0}, props
 				);
@@ -35,10 +37,13 @@ $(document).ready(function() {
 		$(this).siblings('.accContent').not($(this).next()).slideUp('slow');
 
 		//find other open accordeons, and animate their arrow back
-		var otherAccordeons = currentAccordion.siblings('.accordion').find('img');
-		otherAccordeons.animate(
-			{'rotation' : -90}, props
-		);
+		if(!firstTime){ //hack
+			var otherAccordeons = currentAccordion.siblings('.accordion').find('img');
+			otherAccordeons.animate(
+				{'rotation' : -90}, props
+			);
+		}
+		firstTime=false;
 	} else {
 		currentAccordion.find('img').animate(
 			{'rotation' : -90}, props
