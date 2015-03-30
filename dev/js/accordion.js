@@ -11,48 +11,55 @@
 // -------------------------------------
 
 $(document).ready(function() {
-  var firstTime = true;
+	$.fn.animateRotate = function(angle, duration, easing, complete) {
+		var args = $.speed(duration, easing, complete);
+		var step = args.step;
+		return this.each(function(i, e) {
+			args.complete = $.proxy(args.complete, e);
+			args.step = function(now) {
+				$.style(e, 'transform', 'rotate(' + now + 'deg)');
+				if (step) return step.apply(e, arguments);
+			};
+
+			$({deg: 0}).animate({deg: angle}, args);
+		});
+	};
+
 
   // ----------------------------
   // Accordion
   // ----------------------------
   $('.accordion').click(function(event) {
     var currentAccordion = $(event.currentTarget);
-	var props =	{
-		  duration: 500,
-		  step: function(now, fx) {
-			  console.log(now);
-			  $(this).css({"transform": "rotate("+now+"deg)"});
-		  }
-	};
 
 	if ($(this).next().is(':hidden')) {
 		
-		currentAccordion.find('img').animate(
-			{'rotation' : 0}, props
-				);
+		currentAccordion.animateRotate(0, {
+			duration: 500,
+			easing: 'linear'
+		});
+
 		$(this).next().slideDown('slow');
 
 		//close all other open accs
 		$(this).siblings('.accContent').not($(this).next()).slideUp('slow');
 
 		//find other open accordeons, and animate their arrow back
-		if(!firstTime){ //hack
-			var otherAccordeons = currentAccordion.siblings('.accordion').find('img');
-			otherAccordeons.animate(
-				{'rotation' : -90}, props
-			);
-		}
-		firstTime=false;
+		var otherAccordeons = currentAccordion.siblings('.accordion').find('img');
+		//otherAccordeons.animate({'rotation' : -90}, props);
+		otherAccordeons.animateRotate(-90, {
+			duration: 500,
+			easing: 'linear'
+		});
+
 	} else {
-		currentAccordion.find('img').animate(
-			{'rotation' : -90}, props
-		);
+		currentAccordion.animateRotate(-90, {
+			duration: 500,
+			easing: 'linear'
+		});
 		$(this).next().slideUp('slow');
 	}
   });
-
-
 
   $('.accContent').hide(); // Hide Content
   $('.home').show(); // Show the "Home" content by Default
