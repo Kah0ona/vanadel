@@ -33,6 +33,12 @@ $(document).ready(function() {
 
 		//close all other open accs
 		$(this).siblings('.accContent').not($(this).next()).slideUp('slow');
+
+		//find other open accordeons, and animate their arrow back
+		var otherAccordeons = currentAccordion.siblings('.accordion').find('img');
+		otherAccordeons.animate(
+			{'rotation' : -90}, props
+		);
 	} else {
 		currentAccordion.find('img').animate(
 			{'rotation' : -90}, props
