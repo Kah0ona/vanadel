@@ -22,14 +22,14 @@ Template Name: page
 					</article>
 					<section class="u-gridRow"> 
 						<a href="/contact">
-							<button class="aside-button">
+							<button style="margin-top:40px;" class="aside-button">
 								<img  class="button-image" src="<?php echo get_stylesheet_directory_uri(); ?>/img/man.png" >
 								<p>Maak een kennismakingsafspraak</p>
 							</button>	
 						</a>
 
 						<a href="/contact">
-							<button class="aside-button">
+							<button style="margin-top:40px;" class="aside-button">
 								<img  class="button-image" src="<?php echo get_stylesheet_directory_uri(); ?>/img/mail.png" >
 								<p>Vraag een offerte aan</p>
 							</button>	

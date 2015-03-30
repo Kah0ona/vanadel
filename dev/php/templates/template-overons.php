@@ -16,7 +16,7 @@ Template Name: Over ons
 					<hr class="underline">
 					<?php the_content(); $image1 = get_field('image1'); ?>
 				</div>
-				<aside class="u-gridCol4">
+				<aside class="u-gridCol4"> 
 					<section class="aside-img">
 						<?php if( !empty($image1) ): ?>
 							<img  class="" src="<?php echo $image1['url']; ?>" alt="<?php echo $image1['alt']; ?>"/>
@@ -27,8 +27,11 @@ Template Name: Over ons
 			</div>
 
 			<div class="gridRow">
+				
 				<h2>Werkwijze en kwaliteit</h2>
+				
 				<hr class="underline">
+				
 				<p class="blue-a">Bij Van Adel Administratie Belastingen Advies staat kwaliteit voorop.
 					Als aspirant lid van de <a href="http://www.noab.nl/">NOAB</a> (Nederlandse Orde van Administratie- en Belastingdeskundigen) en het <a href="http://www.rb.nl/">RB</a> (Register Belastingadviseurs) 
 					staat ons kantoor garant voor kwaliteit, vakkundigheid en efficiëntie.
@@ -37,7 +40,9 @@ Template Name: Over ons
 					Het huidige ondernemingsklimaat kenmerkt zich door snelle economische ontwikkelingen, nieuwe wetgevingen en uitdagende risico’s. 
 					Deze zaken vragen om snel, realistisch en doeltreffend financieel beheer. 
 					Van Adel voorziet in die behoefte door op verschillende terreinen deskundig en onafhankelijk advies te geven, 
-					zowel op ad-hoc basis als op de lange termijn middels interim financieel management.</p>
+					zowel op ad-hoc basis als op de lange termijn middels interim financieel management.
+				</p>
+				
 			</div>
 			<div class="gridRow">
 				<h2>Kernwaarden</h2>

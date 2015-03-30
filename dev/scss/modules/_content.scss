@@ -15,7 +15,7 @@
 		margin-top: 15px;
 		width: 15px;
 	
-	    transform: rotate(-90deg);
+	   // transform: rotate(-90deg);
 	}
 	a{
 		text-decoration: none;
@@ -29,7 +29,11 @@
 	 //   }
 	//}
 }
-
+.content-wrapper{
+	.aside-button{
+	margin-bottom:70px;
+	}
+}
 
 .accordion.active {
 	img {
@@ -153,13 +157,20 @@ aside{
 	margin-left: 10px;
 	margin-right: 10px;
 	position: relative;
-
-	a{
+	min-height:620px;
+	a{ 
 		color:#DF6031;	
 	}
-
 }
-main{
+.content-wrapper-home{
+	margin-left: 10px;
+	margin-right: 10px;
+	position: relative;
+	a{ 
+		color:#DF6031;	
+	}
+}
+.main{
 	margin-top: 10px;
 }
 //---------------------------------------------------------------------
@@ -376,6 +387,33 @@ aside{
 .gfield_required{
 	color:#E05F2E !important;
 }
+#input_1_1{
+	width:100%;
+}
+#input_1_2{
+	width:100%;
+}
+#input_1_3{
+	width:100%;
+}
+#input_1_4{
+	width:100%;
+}
+#input_1_5{
+	width:100%;
+}
+#input_1_6{
+	width:100%;
+}
+#input_1_7{
+	width:100%;
+}
+#input_1_8{
+	width:100%;
+}
+#input_1_9{
+	width:100%;
+}
 //-----------------------------------------------------------------------
 //app--------------------------------------------------------------------
 .app-text{
@@ -387,8 +425,20 @@ aside{
 
 .overons-container{
 	margin-top:10px;
+	position: relative;
 	h2{
 		margin-top: 30px !important;
+	}
+	.accordion{
+		background:none;
+		position: relative;
+		img{
+			left:-40px;
+			margin-top:47px;
+		} 
+	}
+	.aside-button{
+		margin-bottom:70px;
 	}
 }
 .aside-button{

@@ -42,13 +42,13 @@
   <body <?php body_class(); ?> >
 
     <header class="u-gridContainer">
-          <a href="/home"> <img class="logo-top" src="<?php echo get_stylesheet_directory_uri(); ?>/img/van_adel_logo.svg"/></a>
+          <a href="/home"> <img class="logo-top" src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo-kleiner.png"/></a>
           <div class="socialmedia">
             <a href="https://www.facebook.com/vanadelfinance" target="_blank"> <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/facebook.png"/></a>
             <a href="https://www.linkedin.com/company/2656057?trk=prof-exp-company-name" target="_blank"> <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/linkedin.png"/></a>
             <a href="mailto:info@vanadelfinance.nl"> <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/mail-header.png"/></a>
           </div>
-          <h3 class="header-title">Welkom op de website van Van Adel</h3>
+          <h3 class="header-title">Welkom op de website van Van Adel</h3> 
     </header>
   
     <div class="Bot-Nav">

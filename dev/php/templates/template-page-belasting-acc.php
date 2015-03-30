@@ -7,7 +7,7 @@ Template Name: page-belasting-acc
 <?php get_header(); ?>
 
 	<div class="u-gridContainer">
-		<div class="content-wrapper" style="min-height:560px;">
+		<div class="content-wrapper">
 			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 				<section class="u-gridRow">
 
@@ -21,7 +21,7 @@ Template Name: page-belasting-acc
 							
 						</div>
 						<div class="accordion">
-						    <a href="#1"><img class="arrow-down" src="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-down-b.png"/><h4> Belastingaangiften</h4></a>
+						    <a href="#1"><img class="arrow-down" src="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-down-b-2.png"/><h4> Belastingaangiften</h4></a>
 						</div>
 						<div class="accContent active" >
 						    <hr>
@@ -36,7 +36,7 @@ Template Name: page-belasting-acc
 							</p><hr>
 						</div>
 						<div class="accordion">
-						    <a href="#2"><img class="arrow-down" src="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-down-b.png"/><h4> Belastingadvies</h4></a>
+						    <a href="#2"><img class="arrow-down" src="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-down-b-2.png"/><h4> Belastingadvies</h4></a>
 						</div>
 						<div class="accContent active" >
 						    <hr>

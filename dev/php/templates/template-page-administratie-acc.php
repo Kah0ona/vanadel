@@ -21,7 +21,7 @@ Template Name: page-administratie-acc
 							
 						</div>
 						<div class="accordion">
-						    <a href="#0"><img class="arrow-down" src="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-down-b.png"/><h4> Administratie</h4></a>
+						    <a href="#0"><img class="arrow-down" src="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-down-b-2.png"/><h4> Administratie</h4></a>
 						</div>
 						<div class="accContent active" >
 						   <hr> <p>
@@ -30,7 +30,7 @@ Template Name: page-administratie-acc
 							</p><hr>
 						</div>
 						<div class="accordion">
-						    <a href="#1"><img class="arrow-down" src="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-down-b.png"/><h4> Salarisadministratie</h4></a>
+						    <a href="#1"><img class="arrow-down" src="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-down-b-2.png"/><h4> Salarisadministratie</h4></a>
 						</div>
 						<div class="accContent active" >
 						   <hr> <p>
@@ -40,7 +40,7 @@ Template Name: page-administratie-acc
 						</div>
 
 						<div class="accordion">
-						    <a href="#2"><img class="arrow-down" src="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-down-b.png"/><h4> Tussentijdse rapportage</h4></a>
+						    <a href="#2"><img class="arrow-down" src="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-down-b-2.png"/><h4> Tussentijdse rapportage</h4></a>
 						</div>
 						<div class="accContent">
 							
@@ -56,7 +56,7 @@ Template Name: page-administratie-acc
 						</div> 
 
 						<div class="accordion">
-						    <a href="#3"><img class="arrow-down" src="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-down-b.png"/><h4> Jaarrekening</h4></a>
+						    <a href="#3"><img class="arrow-down" src="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-down-b-2.png"/><h4> Jaarrekening</h4></a>
 						</div>
 						<div class="accContent">
 							<hr>

@@ -21,7 +21,7 @@ Template Name: page-diensten-acc
 							
 						</div>
 						<div class="accordion">
-						    <a href="#1"><img class="arrow-down" src="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-down-b.png"/><h4> Financiële advisering</h4></a>
+						    <a href="#1"><img class="arrow-down" src="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-down-b-2.png"/><h4> Financiële advisering</h4></a>
 						</div>
 						<div class="accContent active" >
 							<hr>
@@ -37,7 +37,7 @@ Template Name: page-diensten-acc
 						</div>
 
 						<div class="accordion">
-						    <a href="#2"><img class="arrow-down" src="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-down-b.png"/><h4> Bedrijfskundige advisering</h4></a>
+						    <a href="#2"><img class="arrow-down" src="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-down-b-2.png"/><h4> Bedrijfskundige advisering</h4></a>
 						</div>
 						<div class="accContent" >
 						   <hr> <p>
@@ -48,7 +48,7 @@ Template Name: page-diensten-acc
 						</div>
 
 						<div class="accordion">
-						    <a href="#3"><img class="arrow-down" src="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-down-b.png"/><h4> Interim ondersteuning</h4></a>
+						    <a href="#3"><img class="arrow-down" src="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-down-b-2.png"/><h4> Interim ondersteuning</h4></a>
 						</div>
 						<div class="accContent">
 							
@@ -61,7 +61,7 @@ Template Name: page-diensten-acc
 						</div> 
 
 						<div class="accordion">
-						    <a href="#4"><img class="arrow-down" src="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-down-b.png"/><h4> Startersbegeleiding</h4></a>
+						    <a href="#4"><img class="arrow-down" src="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-down-b-2.png"/><h4> Startersbegeleiding</h4></a>
 						</div>
 						<div class="accContent">
 							<hr>

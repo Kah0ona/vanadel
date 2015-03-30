@@ -65,7 +65,7 @@ Template Name: Homepage
     </div>
 
 	<div class="u-gridContainer">
-		<div class="content-wrapper">
+		<div class="content-wrapper-home">
 			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 				<section class="u-gridRow">
 					<article class="Content Content--home u-gridCol8" id="post-<?php the_ID(); ?>">
@@ -82,6 +82,21 @@ Template Name: Homepage
 
 							 ?>
 							<?php edit_post_link('Edit this entry.', '<p>', '</p>'); ?>
+							<section class="u-gridRow" style="margin:20px 0px;"> 
+								<a href="/contact" style="color:white;">
+									<button class="aside-button">
+										<img  class="button-image" src="<?php echo get_stylesheet_directory_uri(); ?>/img/man.png" >
+										<p>Maak een kennismakingsafspraak</p>
+									</button>	
+								</a>
+
+								<a href="/contact">
+									<button class="aside-button">
+										<img  class="button-image" src="<?php echo get_stylesheet_directory_uri(); ?>/img/mail.png" >
+										<p>Vraag een offerte aan</p>
+									</button>	
+								</a>
+							</section>
 						</main>
 					</article>
 					<aside class="u-gridCol4">
@@ -92,7 +107,7 @@ Template Name: Homepage
 						</section>
 
 						<section class="aside-ul2">
-									<div class="content-wrapper"> 			
+									<div class="content-wrapper-home"> 			
 										<h5>Actueel nieuws</h5>
 										<article class="blogspost">
 											<?php echo $blogs; ?>
@@ -104,21 +119,7 @@ Template Name: Homepage
 						
 					</aside>
 				</section>
-				<section class="u-gridRow" style="margin:20px 0px;"> 
-					<a href="/contact" style="color:white;">
-						<button class="aside-button">
-							<img  class="button-image" src="<?php echo get_stylesheet_directory_uri(); ?>/img/man.png" >
-							<p>Maak een kennismakingsafspraak</p>
-						</button>	
-					</a>
-
-					<a href="/contact">
-						<button class="aside-button">
-							<img  class="button-image" src="<?php echo get_stylesheet_directory_uri(); ?>/img/mail.png" >
-							<p>Vraag een offerte aan</p>
-						</button>	
-					</a>
-				</section>
+				
 				<section >
 					<article class="">
 						<hgroup class="h2-title u-gridCol12">

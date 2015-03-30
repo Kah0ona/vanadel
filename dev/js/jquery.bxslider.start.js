@@ -3,7 +3,7 @@ jQuery(document).ready(function($) {
     mode: 'horizontal',
     minSlides: 1,
     maxSlides: 1,
-    startSlide: 1,
+    startSlide: 0,
     //slideWidth: 1200,
     slideMargin: 0,
     // captions: true,

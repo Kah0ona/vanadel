@@ -59,6 +59,7 @@ Template Name: Diensten
 								<section class="driecolumen-style-diensten">
 									<a href="/administratie"><h5>Administratie</h5></a>
 									<ul>
+										<li>• Administratie</li>
 										<li>• Salarisadministratie</li>
 										<li>• Tussentijdse rapportage </li>
 										<li>• Jaarrekening</a></li>

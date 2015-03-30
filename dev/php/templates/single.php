@@ -35,7 +35,7 @@ function curPageURL() {
 					<a href="/actueel-nieuws" class="leesmeer-blog">< Terug naar actuele nieuwsberichten</a>
 					<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-					<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
+					<article <?php post_class() ?> id="post-<?php the_ID(); ?>"> 
 						<hgroup class="h2-title">
 									<h2 class="border-none"><?php the_title(); ?></h2>
 									<hr class="underline">
@@ -46,11 +46,13 @@ function curPageURL() {
 							<?php the_tags( '<p>Tags: ', ', ', '</p>'); ?>
 						</div>
 					</article>
-					<div class="fb-share-button" data-href="$actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";" data-layout="button"></div>
-					<script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: nl_NL</script>
-					<script type="IN/Share"></script>
-					<a href="https://twitter.com/share" class="twitter-share-button" data-count="none">Tweet</a>
-					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+					<div style="margin-top:25px;">
+						<div class="fb-share-button" data-href="<?php echo   "http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']; ?>" data-layout="button"></div>
+						<script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: nl_NL</script>
+						<script type="IN/Share"></script>
+						<a href="https://twitter.com/share" class="twitter-share-button" data-count="none">Tweet</a>
+						<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+					</div>
 				</div>
 				<div class="u-gridCol4 posts-list aside-ul2">
 					<h5>Meer nieuws</h5>
@@ -58,7 +60,7 @@ function curPageURL() {
 					<?php
 
 
-					$args = array( 'posts_per_page' => 5, 'offset'=> 1, 'category' => 1 );
+					$args = array( 'posts_per_page' => 4, 'offset'=> 0, 'category' => 1 );
 
 					$myposts = get_posts( $args );
 					foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
@@ -72,10 +74,10 @@ function curPageURL() {
 				</div>
 			</div>
 			
-				<nav class="u-gridRow">
+				<!--<nav class="u-gridRow">
 					<div><?php previous_post_link('&laquo; %link') ?></div>
 					<div><?php next_post_link('%link &raquo;') ?></div>
-				</nav>
+				</nav>-->
 
 				
 
