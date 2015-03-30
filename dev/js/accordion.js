@@ -30,6 +30,9 @@ $(document).ready(function() {
 			{'rotation' : 0}, props
 				);
 		$(this).next().slideDown('slow');
+
+		//close all other open accs
+		$(this).siblings('.accContent').not($(this).next()).slideUp('slow');
 	} else {
 		currentAccordion.find('img').animate(
 			{'rotation' : -90}, props
