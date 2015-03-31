@@ -11,20 +11,6 @@
 // -------------------------------------
 
 $(document).ready(function() {
-	$.fn.animateRotate = function(angle, duration, easing, complete) {
-		var args = $.speed(duration, easing, complete);
-		var step = args.step;
-		return this.each(function(i, e) {
-			args.complete = $.proxy(args.complete, e);
-			args.step = function(now) {
-				$.style(e, 'transform', 'rotate(' + now + 'deg)');
-				if (step) return step.apply(e, arguments);
-			};
-
-			$({deg: 0}).animate({deg: angle}, args);
-		});
-	};
-
 
   // ----------------------------
   // Accordion
@@ -40,7 +26,7 @@ $(document).ready(function() {
 	};
 	if ($(this).next().is(':hidden')) {
 		
-		currentAccordion.find('img').animate({'rotation' : 0}, props);
+		currentAccordion.find('img').animate({'rotation' : 90}, props);
 		$(this).next().slideDown('slow');
 
 		//close all other open accs
@@ -48,11 +34,11 @@ $(document).ready(function() {
 
 		//find other open accordeons, and animate their arrow back
 		var otherAccordeons = currentAccordion.siblings('.accordion').find('img');
-		otherAccordeons.animate({'rotation' : -90}, props);
+		otherAccordeons.animate({'rotation' : 0}, props);
 
 
 	} else {
-		currentAccordion.find('img').animate({'rotation' : -90}, props);
+		currentAccordion.find('img').animate({'rotation' : 0}, props);
 		$(this).next().slideUp('slow');
 	}
   });
