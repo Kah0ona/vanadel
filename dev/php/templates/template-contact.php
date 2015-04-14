@@ -30,7 +30,7 @@ Template Name: Contactpage
 					</div>
 					<div class="u-gridRow">	
 						<div class="u-gridCol7">				
-							<p class="contact-page-p">Heeft u nog vragen? Neem dan hieronder contact met ons op. </p>
+							<p class="contact-page-p">Vul het formulier in met uw vraag of bericht, dan zullen wij spoedig mogelijk contact met u opnemen. </p>
 							<p><a style="color:#E05F2E;">*</a> Verplichte velden</p>
 							<?php the_content(); ?>
 						
@@ -41,8 +41,9 @@ Template Name: Contactpage
 								<p>Van Adel | Administratie • Belastingen • Advies</p>
 								<p>Wapserveld 13</p>
 								<p>2151 JP Nieuw-Vennep</p><br>
+								<p>Tel: 0252 347 577</p>
 								<p>E-mail: <a href="mailto:info@vanadelfinance.nl">info@vanadelfinance.nl</a></p> 
-								<p>Tel: 0252 347 577</p> <br>
+								 <br>
 								<p>KvK: 54052203</p>
 								<p><a href="https://www.google.nl/maps/dir//Van+Adel+%7C+Administratie+%E2%80%A2+Belastingen+%E2%80%A2+Advies,+Wapserveld+13,+2151+JP+Nieuw-Vennep/@52.2671694,4.6060651,18z/data=!4m13!1m4!3m3!1s0x47c5c29c0d380e1f:0x97adaf75424fa4fa!2sVan+Adel+%7C+Administratie+%E2%80%A2+Belastingen+%E2%80%A2+Advies!3b1!4m7!1m0!1m5!1m1!1s0x47c5c29c0d380e1f:0x97adaf75424fa4fa!2m2!1d4.606041!2d52.267002" target="_blank">Routebeschrijving</a></p>
 							</div>

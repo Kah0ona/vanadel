@@ -31,9 +31,11 @@ Template Name: Over ons 2
 					 
 					
 					<div class="accordion">
-					    <a href="#1"><img class="arrow-down" src="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-down-b-2.png"/><h2>Werkwijze en kwaliteit</h2>
-				
-						<hr class="underline"></a>
+					    <a href="#1">
+					    	
+					    	<h2>Werkwijze en kwaliteit</h2>
+								<img class="arrow-down" src="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-down-b-2.png"/>
+						</a>
 					</div>
 					<div class="accContent active" >
 						<p class="blue-a">Bij Van Adel Administratie Belastingen Advies staat kwaliteit voorop.
@@ -49,8 +51,8 @@ Template Name: Over ons 2
 					</div>
 
 					<div class="accordion">
-					    <a href="#2"><img class="arrow-down" src="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-down-b-2.png"/><h2>Kernwaarden</h2>
-					<hr class="underline"></a>
+					    <a href="#2"><!--<img class="arrow-down" src="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-down-b-2.png"/>--><h2>Kernwaarden</h2>
+					</a>
 					</div>
 					<div class="accContent">
 					
@@ -86,7 +88,7 @@ Template Name: Over ons 2
 					</div>
 
 					<div class="accordion">
-					    <a href="#3"><img class="arrow-down" src="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-down-b-2.png"/><h2>Werkgebied</h2><hr class="underline"></a>
+					    <a href="#3"><!--<img class="arrow-down" src="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-down-b-2.png"/>--><h2>Werkgebied</h2></a>
 					</div>
 					<div class="accContent" style="padding-top:40px;">
 						<div class="u-gridCol2"><p></p></div>

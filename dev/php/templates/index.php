@@ -1,39 +1,48 @@
 <?php get_header(); ?>
 	<div class="u-gridContainer">
+		
 		<div class="content-wrapper Content">
-			<?php if (have_posts()) : ?>
+			<div class="u-gridCol8">
+				<?php if (have_posts()) : ?>
 
-				<?php while (have_posts()) : the_post(); ?>
-				<div class="news-item">
-					<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
-							<hgroup class="h2-title">
-								<h2 class="border-none"><?php the_title(); ?></h2>
-								<hr class="underline">
-							</hgroup>
-						<span><?php the_time( get_option( 'date_format' ) ); ?></span>
-						<div class="blogtekst"><?php the_content('Read the rest of this entry &raquo;'); ?></div>
-						<a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><button class="float-right">Lees meer</button></a>
+					<?php while (have_posts()) : the_post(); ?>
+					<div class="news-item">
+						<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
+								<hgroup class="h2-title">
+									<h2 class="border-none"><?php the_title(); ?></h2>
+									<hr class="underline">
+								</hgroup>
+							<span><?php the_time( get_option( 'date_format' ) ); ?></span>
+							<div class="blogtekst"><?php the_content('Read the rest of this entry &raquo;'); ?></div>
+							<a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><button class="float-right">Lees meer</button></a>
 
-						<p><?php the_tags('Tags: ', ', ', '<br />'); ?> Posted in <?php the_category(', ') ?> | <?php edit_post_link('Edit', '', ' | '); ?>  <?php comments_popup_link('No Comments &#187;', '1 Comment &#187;', '% Comments &#187;'); ?></p>
-					</article>
-				</div>
-				<?php endwhile; ?>
+							<p><!--<?php the_tags('Tags: ', ', ', '<br />'); ?> Posted in <?php the_category(', ') ?> | <?php edit_post_link('Edit', '', ' | '); ?>  <?php comments_popup_link('No Comments &#187;', '1 Comment &#187;', '% Comments &#187;'); ?>--></p>
+						</article>
+					</div>
 
-				<nav>
-					<div><?php next_posts_link('&laquo; Older Entries') ?></div>
-					<div><?php previous_posts_link('Newer Entries &raquo;') ?></div>
-				</nav>
+					<?php endwhile; ?>
 
-			<?php else : ?>
+					<nav>
+						<div><?php next_posts_link('&laquo; Older Entries') ?></div>
+						<div><?php previous_posts_link('Newer Entries &raquo;') ?></div>
+					</nav>
 
-				<h2>Not Found</h2>
-				<p>Sorry, but you are looking for something that isn't here.</p>
-				<?php get_search_form(); ?>
+				<?php else : ?>
 
-			<?php endif; ?>
+					<h2>Not Found</h2>
+					<p>Sorry, but you are looking for something that isn't here.</p>
+					<?php get_search_form(); ?>
+
+				<?php endif; ?>
+			</div>
+			<div class="u-gridCol4 aside-ul2 " style="padding:20px;">
+				<h5>Categorieën</h5><hr>
+				<?php get_sidebar(); ?>
+			</div>
+		</div>
+		
 	</div>
-</div>
 
-<?php get_sidebar(); ?>
+
 
 <?php get_footer(); ?>

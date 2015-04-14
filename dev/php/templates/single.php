@@ -37,7 +37,7 @@ function curPageURL() {
 
 					<article <?php post_class() ?> id="post-<?php the_ID(); ?>"> 
 						<hgroup class="h2-title">
-									<h2 class="border-none"><?php the_title(); ?></h2>
+									<h2 class="border-none" style="font-size:1.8rem;"><?php the_title(); ?></h2>
 									<hr class="underline">
 						</hgroup>
 						<div>

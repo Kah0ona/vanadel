@@ -7,7 +7,7 @@ Template Name: page-belasting-acc
 <?php get_header(); ?>
 
 	<div class="u-gridContainer">
-		<div class="content-wrapper">
+		<div class="content-wrapper" style="min-height:590px;"> 
 			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 				<section class="u-gridRow">
 
