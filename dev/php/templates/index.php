@@ -2,7 +2,7 @@
 	<div class="u-gridContainer">
 		
 		<div class="content-wrapper Content">
-			<div class="u-gridCol8">
+			<div class="u-gridCol8"  style="margin-bottom:20px;">
 				<?php if (have_posts()) : ?>
 
 					<?php while (have_posts()) : the_post(); ?>
@@ -13,18 +13,21 @@
 									<hr class="underline">
 								</hgroup>
 							<span><?php the_time( get_option( 'date_format' ) ); ?></span>
-							<div class="blogtekst"><?php the_content('Read the rest of this entry &raquo;'); ?></div>
-							<a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><button class="float-right">Lees meer</button></a>
+							<div class="blogtekst">
+								<?php the_content(); ?>
+							</div>
+							
 
-							<p><!--<?php the_tags('Tags: ', ', ', '<br />'); ?> Posted in <?php the_category(', ') ?> | <?php edit_post_link('Edit', '', ' | '); ?>  <?php comments_popup_link('No Comments &#187;', '1 Comment &#187;', '% Comments &#187;'); ?>--></p>
+							<p><?php the_tags('Tags: ', ', ', '<br />'); ?> Geplaatst  in <?php the_category(', ') ?> | <?php edit_post_link('Edit', '', ' | '); ?>  </p>
+							<a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><button class="float-right">Lees meer</button></a>
 						</article>
 					</div>
 
 					<?php endwhile; ?>
 
 					<nav>
-						<div><?php next_posts_link('&laquo; Older Entries') ?></div>
-						<div><?php previous_posts_link('Newer Entries &raquo;') ?></div>
+						<div><?php previous_posts_link('&laquo; Vorige pagina') ?></div>
+						<div style="float:right"><?php next_posts_link(' Volgende pagina &raquo;') ?></div>
 					</nav>
 
 				<?php else : ?>
@@ -36,7 +39,7 @@
 				<?php endif; ?>
 			</div>
 			<div class="u-gridCol4 aside-ul2 " style="padding:20px;">
-				<h5>Categorieën</h5><hr>
+				
 				<?php get_sidebar(); ?>
 			</div>
 		</div>

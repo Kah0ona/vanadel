@@ -9,7 +9,7 @@
 					<p>Tel: 0252 347 577</p>
 				</div>
 				<div class="u-gridCol2">
-					<h6>Administratie</h6>
+					<h6>Accountancy</h6>
 					<ul>
 						<li><a href="/administratie">Administratie</a></li>
 						<li><a href="/administratie">Salarisadministratie</a></li>
@@ -31,7 +31,7 @@
 					<ul>
 						<li><a href="/advies">Financiële advisering</a></li>
 						<li><a href="/advies">Bedrijfskundige advisering</a></li>
-						<li><a href="/advies">Interim ondersteuning</a></li>
+						<li><a href="/advies">Interim financieel management</a></li>
 						<li><a href="/advies">Startersbegeleiding</a></li>
 					</ul>
 				</div>

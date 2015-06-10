@@ -34,10 +34,10 @@ $(document).ready(function() {
 
     if (scrollTop > stickyNavTop) {
       $('.Bot-Nav').addClass('sticky')
-
+      $('.extra-padding').css("paddingTop", "44px");
     } else {
       $('.Bot-Nav').removeClass('sticky');
-
+      $('.extra-padding').css("paddingTop", "0px");
     }
   };
 

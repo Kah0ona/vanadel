@@ -57,7 +57,7 @@ Template Name: Diensten
 							<article class="u-gridCol4 margin-bottom">
 								<img  class="imgstyle" src="<?php echo $image2['url']; ?>" alt="<?php echo $image2['alt']; ?>"/>
 								<section class="driecolumen-style-diensten">
-									<a href="/administratie"><h5>Administratie</h5></a>
+									<a href="/administratie"><h5>Accountancy</h5></a>
 									<ul>
 										<li>• Administratie</li>
 										<li>• Salarisadministratie</li>
@@ -89,7 +89,7 @@ Template Name: Diensten
 									<ul>
 										<li>• Financiële advisering</li>
 										<li>• Bedrijfskundige advisering</li>
-										<li>• Interim ondersteuning</li>
+										<li>• Interim financieel management</li>
 										<li>• Startersbegeleiding</li>
 									</ul>						
 									<div class="a-leftbottom"><a href="/advies" class="driecolumn-link">Lees verder</a></div>

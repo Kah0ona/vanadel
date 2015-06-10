@@ -1,3 +1,7 @@
+html {
+    overflow-y:scroll;
+}
+
 //Accordion--------------------------
 .accordion{
 	border:1px solid white;
@@ -28,6 +32,9 @@
 	//    margin-top: 17px;
 	 //   }
 	//}
+}
+.gform_confirmation_message{
+	font-weight:700;
 }
 .content-wrapper{
 	.aside-button{
@@ -61,6 +68,7 @@
 }
 .posts-list{
 	padding:20px;
+	text-align:left;
 	ul{
 
 	}
@@ -111,14 +119,14 @@ border-bottom-right-radius: 0px;
 z-index: 999999999999999999;
 top: -460px;
 width: 398px !important;
-}
+} 
 .vaste-slogan{
 position: absolute;
 z-index: 9999999999999999999;
 top: -326px;
-left: 6%;
+left: 3%;
 font-size: 29px;
-width: 300px;
+width: 330px;
 color: #fff;
 }
 .slogan{
@@ -172,7 +180,7 @@ aside{
 }
 .main{
 	margin-top: 10px;
-}
+} 
 //---------------------------------------------------------------------
 
 // aside --------------------------------------------------------------
@@ -185,7 +193,15 @@ aside{
 }
 .aside-ul2{
 	background: #f5f5f6;
-	.widgettitle{display:none;}
+	.widgettitle{
+		font-size: 1.25rem;
+		margin: 0;
+		color: #003f65;
+		margin-top: 15px;
+		margin-bottom: 15px;
+		border-bottom:1px solid grey;
+	}
+	label{display:none;}
 }
 .section-blog-link{
  display: none;
@@ -218,7 +234,7 @@ aside{
 	border-right: solid 1px #d7d9db;
 	border-bottom: solid 1px #d7d9db;
 	margin-top:-5px;
-	height: 300px;
+	//height: 300px;
 	position: relative;
 }
 .driecolumen-style-diensten{
@@ -289,7 +305,7 @@ aside{
 	}
 }
 .blogtekst{
-	max-height: 110px;
+	max-height: 120px;
 	overflow: hidden;
 }
 .form-allowed-tags{
@@ -306,7 +322,7 @@ aside{
 }
 .float-right{
 	float: right;
-	margin-top: 10px;
+//	margin-top: 10px;
 }
 
 .margin-bottom{
@@ -340,7 +356,9 @@ aside{
 	margin-bottom:20px;
 	h4{
 		line-height: 3.3;
-	}
+		margin-top:0px; 
+		text-align: center;
+	} 
 }
 .blue-border{
 	border-bottom:3px solid #022E55;
@@ -357,7 +375,9 @@ aside{
 	color:white;
 	margin-bottom:20px;
 	h4{
+		margin-top:0px;
 		line-height: 3.3;
+		text-align: center;
 	}
 }
 
@@ -379,11 +399,17 @@ aside{
 	z-index:999999999999999;
 	right: 200px;
 }
-
+.current-cat{
+	a{
+		font-weight: 700;
+		color:#003f65;
+	}
+}
 //-----------------------------------------------------------------------
 // contact --------------------------------------------------------------
 .adress-info{
-	margin-top: 10px;
+	//margin-top: 10px;
+	margin-bottom:20px;
 	p{
 		margin-bottom: 5px;
 	}

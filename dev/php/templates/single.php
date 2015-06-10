@@ -41,9 +41,11 @@ function curPageURL() {
 									<hr class="underline">
 						</hgroup>
 						<div>
+							<?php the_time( get_option( 'date_format' ) ); ?>
 							<?php the_content(); ?>
 							<?php wp_link_pages(array('before' => '<p>Pages: ', 'after' => '</p>', 'next_or_number' => 'number')); ?>
-							<?php the_tags( '<p>Tags: ', ', ', '</p>'); ?>
+							
+							<p><?php the_tags('Tags: ', ', ', '<br />'); ?> Geplaatst  in <?php the_category(', ') ?> | <?php edit_post_link('Edit', '', ' | '); ?>  </p>
 						</div>
 					</article>
 					<div style="margin-top:25px;">

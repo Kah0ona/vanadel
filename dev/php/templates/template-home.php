@@ -11,12 +11,12 @@ Template Name: Homepage
     
     
     $wp_query = new WP_Query(); 
-    $wp_query->query('showposts=999' . '&paged='.$paged);
+    $wp_query->query('showposts=5' . '&paged='.$paged);
     $blogs = '';
     while ($wp_query->have_posts()) {
     	$wp_query->the_post();
     	$blogs .= '<div class="section-blog-link">
-         			<a href="'.get_permalink().'" ><b> > </b>'.get_the_title().'</a>
+         			<a href="'.get_permalink().'" ><!--<b> > </b>-->'.get_the_title().'</a>
     			   </div>';
     }; 
 
@@ -53,6 +53,7 @@ Template Name: Homepage
 			                               <img class="slogan-back" src="<?php echo get_stylesheet_directory_uri(); ?>/img/sliderfront.svg"/> 
 			                                <p class="vaste-slogan"> <?php the_title(); ?></p>
 			                            </div>
+			                            <div class="slogan-small"><?php the_title(); ?></div>
 			                        </div>
 			                    </div>
 								<?php
@@ -79,7 +80,9 @@ Template Name: Homepage
 							 $image2 = get_field('image2'); 
 							 $image3 = get_field('image3'); 
 							 $image4 = get_field('image4'); 
-
+							 $text1 = get_field('text_acc'); 
+							 $text2 = get_field('text_belasting'); 
+							 $text3 = get_field('text_advies'); 
 							 ?>
 							<?php edit_post_link('Edit this entry.', '<p>', '</p>'); ?>
 							<section class="u-gridRow" style="margin:20px 0px;"> 
@@ -131,13 +134,9 @@ Template Name: Homepage
 							<article class="u-gridCol4 margin-bottom">
 								<img  class="imgstyle" src="<?php echo $image2['url']; ?>" alt="<?php echo $image2['alt']; ?>"/>
 								<section class="driecolumen-style">
-									<a href="/administratie/"><h5>Administratie</h5></a>
-									<p>Het fundament van een succesvolle 
-										onderneming is een overzichtelijke 
-										en solide administratie. Wij zorgen 
-										ervoor dat u inzicht krijgt en houdt 
-										over de geldstromen binnen uw 
-										bedrijf.
+									<a href="/administratie/"><h5>Accountancy</h5></a>
+									<p>
+										<?php echo $text1; ?>
 									</p>
 									<div class="a-leftbottom"><a href="/administratie/" class="driecolumn-link">Lees verder </a></div>
 								</section>
@@ -147,7 +146,7 @@ Template Name: Homepage
 								<img  class="imgstyle" src="<?php echo $image3['url']; ?>" alt="<?php echo $image3['alt']; ?>"/>
 								<section class="driecolumen-style">
 									<a href="/belastingen/"><h5>Belastingen</h5></a>
-									<p>Wij verzorgen alle soorten belastingaangiften, zoals omzetbelasting, inkomstenbelasting, vennootschapsbelasting, loonheffing en dividendbelasting. Ons uitgangspunt hierbij is om dit zo voordelig mogelijk voor u als cliënt uit te voeren.</p>
+									<p><?php echo $text2; ?></p>
 									<div class="a-leftbottom"><a href="/belastingen/" class="driecolumn-link">Lees verder </a></div>
 								</section>
 							</article>
@@ -156,7 +155,7 @@ Template Name: Homepage
 								<img  class="imgstyle" src="<?php echo $image4['url']; ?>" alt="<?php echo $image4['alt']; ?>"/>
 								<section class="driecolumen-style">
 									<a href="/advies/"><h5>Advies</h5></a>
-									<p>Wij bieden u ruim 20 jaar ervaring op het gebied van financiële en fiscale activiteiten in uiteenlopende branches en sectoren binnen het bedrijfsleven. Vanuit onze uitgebreide praktische werkervaring kunnen wij u goed adviseren op diverse financiële gebieden.</p>
+									<p><?php echo $text3; ?></p>
 									<div class="a-leftbottom"><a href="/advies" class="driecolumn-link">Lees verder </a></div>
 								</section>
 							</article>

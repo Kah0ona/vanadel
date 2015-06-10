@@ -10,7 +10,7 @@
     <!-- IE: render in highest mode available -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <!-- Title -->
+    <!-- Title --> 
     <title><?php wp_title( '|', true, 'right' ); ?><?php echo get_bloginfo( 'name' ); ?></title>
 
     <!-- Mobile devices -->
@@ -41,7 +41,7 @@
   </head>
   <body <?php body_class(); ?> >
 
-    <header class="u-gridContainer">
+    <header class="u-gridContainer extra-padding">
           <a href="/home"> <img class="logo-top" src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo-kleiner.png"/></a>
           <div class="socialmedia">
             <a href="https://www.facebook.com/vanadelfinance" target="_blank"> <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/facebook.png"/></a>

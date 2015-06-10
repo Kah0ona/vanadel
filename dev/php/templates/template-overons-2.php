@@ -113,7 +113,7 @@ Template Name: Over ons 2
 			</section>
 			
 		<section>
-			<a href="/contact">
+			<a href="/contact" style="color:white;">
 				<button class="aside-button">
 					<img  class="button-image" src="<?php echo get_stylesheet_directory_uri(); ?>/img/man.png" >
 					<p>Maak een kennismakingsafspraak</p>

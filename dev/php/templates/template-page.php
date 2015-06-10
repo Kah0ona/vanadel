@@ -21,7 +21,7 @@ Template Name: page
 						</main>
 					</article>
 					<section class="u-gridRow"> 
-						<a href="/contact">
+						<a href="/contact" style="color:white;">
 							<button style="margin-top:40px;" class="aside-button">
 								<img  class="button-image" src="<?php echo get_stylesheet_directory_uri(); ?>/img/man.png" >
 								<p>Maak een kennismakingsafspraak</p>
