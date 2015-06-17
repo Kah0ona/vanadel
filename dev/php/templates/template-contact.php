@@ -30,7 +30,7 @@ Template Name: Contactpage
 					</div>
 					<div class="u-gridRow">	
 						<div class="u-gridCol7">				
-							<p class="contact-page-p">Vul het formulier in met uw vraag of bericht, dan zullen wij spoedig mogelijk contact met u opnemen. </p>
+							<p class="contact-page-p"><?php echo get_field('tekst_boven_formulier'); ?></p>
 							<p><a style="color:#E05F2E;">*</a> Verplichte velden</p>
 							<?php the_content(); ?>
 						
