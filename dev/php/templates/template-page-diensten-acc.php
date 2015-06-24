@@ -26,6 +26,21 @@ Template Name: page-diensten-acc
 							
 						?>		
 					</article>
+						<section class="u-gridRow mobileshow"> 
+							<a href="/contact" style="color:white;">
+								<button class="aside-button">
+									<img  class="button-image" src="<?php echo get_stylesheet_directory_uri(); ?>/img/man.png" >
+									<p>Maak een kennismakingsafspraak</p>
+								</button>	
+							</a>
+
+							<a href="/contact">
+								<button class="aside-button">
+									<img  class="button-image" src="<?php echo get_stylesheet_directory_uri(); ?>/img/mail.png" >
+									<p>Vraag een offerte aan</p>
+								</button>	
+							</a>
+						</section>
 					<div class="u-gridCol4 acc-image">
 						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/advies.png"/>
 					</div>
@@ -43,7 +58,7 @@ Template Name: page-diensten-acc
 					</article>-->
 
 				</section>
-				<section class="u-gridRow"> 
+				<section class="u-gridRow mobilehide"> 
 					<a href="/contact" style="color:white;">
 						<button class="aside-button">
 							<img  class="button-image" src="<?php echo get_stylesheet_directory_uri(); ?>/img/man.png" >

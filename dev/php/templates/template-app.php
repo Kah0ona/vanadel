@@ -35,14 +35,14 @@ Template Name: App page
 				</div>
 				<section class="u-gridRow"> 
 						<a href="/contact" style="color:white;">
-							<button style="margin-top:40px;" class="aside-button">
+							<button style="margin-top:40px;" class="aside-button raarknopje">
 								<img  class="button-image" src="<?php echo get_stylesheet_directory_uri(); ?>/img/man.png" >
 								<p>Maak een kennismakingsafspraak</p>
 							</button>	
 						</a>
 
 						<a href="/contact">
-							<button style="margin-top:40px;" class="aside-button">
+							<button style="margin-top:40px;" class="aside-button appknopje">
 								<img  class="button-image" src="<?php echo get_stylesheet_directory_uri(); ?>/img/mail.png" >
 								<p>Vraag een offerte aan</p>
 							</button>	

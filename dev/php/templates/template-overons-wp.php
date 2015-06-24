@@ -17,7 +17,7 @@ Template Name: Over ons wp
 					<hr class="underline">
 					<?php the_content(); $image1 = get_field('image1'); ?>
 				</div>
-				<aside class="u-gridCol4">
+				<aside class="u-gridCol4 overonsresponsive">
 					<section class="aside-img">
 						<?php if( !empty($image1) ): ?>
 							<img  class="" src="<?php echo $image1['url']; ?>" alt="<?php echo $image1['alt']; ?>"/>
@@ -43,7 +43,7 @@ Template Name: Over ons wp
 				</a>
 
 				<a href="/contact">
-					<button>
+					<button class="offertebutton">
 						<img  class="button-image" src="<?php echo get_stylesheet_directory_uri(); ?>/img/mail.png" >
 						<p>Vraag een offerte aan</p>
 					</button>	
