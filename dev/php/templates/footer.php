@@ -7,6 +7,16 @@
 					<p>Wapserveld 13</p>
 					<p>2151 JP Nieuw-Vennep</p>
 					<p>Tel: 0252 347 577</p>
+
+					<p>
+						<?php if ( is_active_sidebar( 'footer-widgets' ) ) : ?>
+						<div class="widgets">
+							<?php dynamic_sidebar( 'footer-widgets' ); ?>
+						</div>
+						<?php endif; ?>
+					</p>
+					
+
 				</div>
 				<div class="u-gridCol2">
 					<h6>Accountancy</h6>
